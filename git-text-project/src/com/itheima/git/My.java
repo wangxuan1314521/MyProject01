@@ -5,7 +5,8 @@ package com.itheima.git;
  * @create 2023-02-16 19:57
  */
 public class My {
-  public static void main (String args[]){
-  System.out.println("你好");
-  }
+    public static void main(String args[]) {
+        System.out.println("你好");
+
+    }
 }
