@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+#单独格式
+name: abc
+
+#对象
+persion:
+  name: 张三
+  age: 20
+  address:
+    - 北京
+    - 天津
+
+#对象行内写法
+persion2: {name: 李四,age: 25}
+
+
+#数组写法
+address:
+  - 北京
+  - 天津
+#数组行内写法
+address2: [beijign,shanghai]
+
+#纯量
+msg1: 'hello \n springboot1'  #单引号不会识别转义字符，会原样输出
+msg2: "hello \n springboot2"  #双引号会识别转义字符，会进行换行
+
+
+
+#参数引用
+
+name2: 王五
+
+persion3: {name: "${name2}", age: 66}
+
+persion4:
+  name: ${name2}
+  age: 88
+
+
+
