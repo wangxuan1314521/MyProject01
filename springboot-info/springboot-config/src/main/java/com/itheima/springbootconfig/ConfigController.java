@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
     @RequestMapping("/helloConfig")
-    public String hello(){
+    public String hello() {
         System.out.println("hello springboot config");
 
         return "hello config";
