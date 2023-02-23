@@ -1,0 +1,28 @@
+
+server:
+  port: 8080
+#第二步配置信息
+#配置数据源信息
+spring:
+  datasource:
+    url: jdbc:mysql:///springboot?serverTimezone=UTC
+    username: root
+    password: root
+    #爆红原因当前环境没有找到mysql环境驱动，其实是有的，
+    #只不过把pom.xml驱动设置为<csope>runtime<scope>,注释掉就好了
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+#Mybatis配置
+mybatis:
+    mapper-locations: classpath:Mapper/*Mapper.xml  #mapper映射文件路径
+    type-aliases-package: com.itheima.springbootmybatis.domain
+
+
+#      config-location: #指定Mybatis的核心配置文件，用到再指定
+
+
+
+
+
+
