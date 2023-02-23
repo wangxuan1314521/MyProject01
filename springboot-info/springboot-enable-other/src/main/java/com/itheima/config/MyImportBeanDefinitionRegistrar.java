@@ -16,7 +16,7 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
 
     @Override
     public void registerBeanDefinitions(AnnotationMetadata annotationMetadata, BeanDefinitionRegistry beanDefinitionRegistry) {
-        AbstractBeanDefinition beanDefinitionBuilder = BeanDefinitionBuilder.rootBeanDefinition(User.class).getBeanDefinition();
+         AbstractBeanDefinition beanDefinitionBuilder = BeanDefinitionBuilder.rootBeanDefinition(User.class).getBeanDefinition();
         beanDefinitionRegistry.registerBeanDefinition("user",beanDefinitionBuilder);
     }
 }

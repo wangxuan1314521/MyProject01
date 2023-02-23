@@ -12,6 +12,6 @@ public class MyImportselector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
         //传入数据
-        return new String[]{"com.itheima.domain.Role","com.itheima.domain.User"};
+         return new String[]{"com.itheima.domain.Role","com.itheima.domain.User"};
     }
 }

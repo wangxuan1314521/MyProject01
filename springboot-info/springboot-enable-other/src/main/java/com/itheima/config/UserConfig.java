@@ -23,6 +23,7 @@ public class UserConfig {
     public User user() {
         return new User();
     }
+
     @Bean
     public Role role() {
         return new Role();
