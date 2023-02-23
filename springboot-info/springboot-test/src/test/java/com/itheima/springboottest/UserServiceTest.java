@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * 编写一个测试类UserServiceTest
  */
 @RunWith(SpringRunner.class)
+//当前测试类的包，是引导类主包名或者及其子包名，则测试类中的classes不需要指定
 @SpringBootTest()
 public class UserServiceTest {
     //测试注入UserService
