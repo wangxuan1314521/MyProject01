@@ -24,6 +24,7 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+//@Conditional里面装的是实现这个注解的实现类，用来判断true或false
 @Conditional(ClassCondition.class)
 public @interface CondintionOnClass {
     String[] value();

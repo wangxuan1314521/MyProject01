@@ -28,7 +28,21 @@
             <scope>test</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!--切换内置web服务器：演示排除tomcat坐标，引入jetty坐标-->
+           <!-- <exclusions>
+                <exclusion>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+       <!-- <dependency>
+            <groupId>spring-boot-starter-jetty</groupId>
+            <artifactId>org.springframework.boot</artifactId>
+        </dependency>-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
