@@ -98,7 +98,7 @@ public class SpringbootEnableApplication {
         //com.itheima.domain.User@895e367
         System.out.println(user);
         //MyImportBeanDefinitionRegistrar.class定义的user名字：com.itheima.domain.User@589da3f3
-        Object user1 = run.getBean("user");
+         Object user1 = run.getBean("user");
         System.out.println("MyImportBeanDefinitionRegistrar.class定义的user名字："+user1);
 
 
