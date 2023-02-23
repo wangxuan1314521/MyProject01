@@ -42,6 +42,7 @@ import org.springframework.context.annotation.Import;
  运行结果：com.itheima.domain.User@f627d13  成功
  */
 //@ComponentScan("com.itheima.config")
+//@Enable注解底层使用@Import注解
 @SpringBootApplication
 //@Import(UserConfig.class)
 @EnableUser
