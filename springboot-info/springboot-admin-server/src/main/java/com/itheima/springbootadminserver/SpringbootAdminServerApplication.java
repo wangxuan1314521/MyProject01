@@ -2,7 +2,7 @@ package com.itheima.springbootadminserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-@EnableAdminServer
+//@EnableAdminServer 这个注解没成功
 @SpringBootApplication
 public class SpringbootAdminServerApplication {
 
