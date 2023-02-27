@@ -3,7 +3,9 @@ package com.itheima;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 它会以Json字符串的形式返回给客户端
  */
 @RestController
+
 public class HelloCroller {
     //读取配置内容方式1 @Value注解
     @Value("${name}")
@@ -45,8 +48,9 @@ public class HelloCroller {
     private Persion persion;
 
 
-    @RequestMapping("textYml")
-    public String hello2() {
+   //测试restful风格 @RequestMapping(value = "textYml/{id}",method = RequestMethod.POST)
+   @RequestMapping(value = "textYml")
+    public String hello2(@PathVariable Integer id) {
         System.out.println("--------@Value方式获取配置文件内容--------");
         System.out.println(name); //abc
         System.out.println(name3);//王五
